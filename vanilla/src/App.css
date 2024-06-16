@@ -12,15 +12,14 @@ nav{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  
   background:rgba(255, 147, 244, 1);
-  height: 74px;
+  height: 70px;
   width:100vw;
   margin:0%;
 }
 .logo{
-  color:white
+  color:white;
+  margin-left:30px;
 }
 .navBar{
   display: flex;
@@ -35,17 +34,20 @@ a{
 .navBar a:hover {
   text-decoration: underline;
   text-decoration-color: rgba(212, 255, 0, 1);
-  
+}
+.navBar a:active{
+  color: rgba(212, 255, 0, 1);
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<Banner>>>>>>>>>>>>>*/
 .banner {
   position: relative;
-  width: 100vw;
-  height: 400px;
+  width: 101vw;
+  height: 450px;
   overflow: hidden;
   background-image: url(./assets/banner.jpg);
-  background-size:100% ;
+  background-size:100vw;
+  
 }
 
 
@@ -85,11 +87,12 @@ a{
 
 /*<<<<<<<<Boxes>>>>>>>>>>>>>*/
 .boxes{
+  /* position: absolute; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  margin-top: 120px;
+  margin-top: -120px;
   width: 100vw;
   gap: 100px;
   
@@ -102,19 +105,38 @@ a{
 }
 .cohete{
   margin-left:95px;
-  margin-top: 70px;
-  width: 120px;
-  height: 120px;
+  margin-top: 55px;
+  width: 100px;
+  height: 100px;
 }
 .Item{
 color: rgba(255, 147, 244, 1);
 display:flex;
 justify-content: center;
-margin: 2px;
+margin: 1px;
 
 }
 p{
   width: 200px;
   margin-left: 60px;
-  margin-top: 0;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.c1{
+  width:152px ;
+  height: 73px;
+  background-color: rgba(255, 147, 244, 1) ;
+  border-radius: 100px 100px 0 0;
+  margin-top:80px; 
+  margin-left: -70px;
+}
+.c2{
+  position:relative;
+  width:180px ;
+  height: 360px;
+  background-color: rgba(255, 147, 244, 1) ;
+  border-radius:  225px 0 0 225px ;
+  margin-top:-160px; 
+  margin-left: 1204px;
 }

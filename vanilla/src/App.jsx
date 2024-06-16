@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <header>Texto para el header</header>
+      <header>Texto de header top</header>
       <nav>
         <div className='logo'><h2>LOGO</h2></div>
         <div className='navBar'>
@@ -20,11 +20,12 @@ function App() {
 
         <div className="overlay"></div>
         <div className="banner-content">
-          <h3>Texto previo al título</h3>
+          <h3>TEXTO PREVIO AL TÍTULO</h3>
           <h1>Título banner principal</h1>
           <button className='enviar'>Enviar</button>
         </div>
       </section>
+      <div className='c2'></div>
       <section className='boxes'>
         <div className='box1'>
           <img className='cohete' src={coheteImage}></img>
@@ -45,6 +46,7 @@ function App() {
           Mientras puedes navegar en nuestro sitio antiguo.</p>
         </div>
       </section>
+      <div className='c1'></div>
     </>
   )
 }
