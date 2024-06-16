@@ -20,8 +20,13 @@ body {
 }
 
 h1{
-  font-size: 37px;
+  font-size: 80px;
   color: white;
+  margin: 10px;
+}
+h2{
+  font-size: 50px;
+  font-weight: bold;
 }
 h3{
   margin:0;
