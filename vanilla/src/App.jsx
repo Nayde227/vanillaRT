@@ -31,19 +31,19 @@ function App() {
           <img className='cohete' src={coheteImage}></img>
           <h2 className='Item'>Item 1</h2>
           <p>Aún nuestro sitio está en cosntrucción (somos muy perfeccionistas jeje).
-          Mientras puedes navegar en nuestro sitio antiguo.</p>
+            Mientras puedes navegar en nuestro sitio antiguo.</p>
         </div>
         <div className='box1'>
           <img className='cohete' src={coheteImage}></img>
           <h2 className='Item'>Item 1</h2>
           <p className='text'>Aún nuestro sitio está en cosntrucción (somos muy perfeccionistas jeje).
-          Mientras puedes navegar en nuestro sitio antiguo.</p>
+            Mientras puedes navegar en nuestro sitio antiguo.</p>
         </div>
         <div className='box1'>
           <img className='cohete' src={coheteImage}></img>
           <h2 className='Item'>Item 1</h2>
           <p>Aún nuestro sitio está en cosntrucción (somos muy perfeccionistas jeje).
-          Mientras puedes navegar en nuestro sitio antiguo.</p>
+            Mientras puedes navegar en nuestro sitio antiguo.</p>
         </div>
       </section>
       <div className='c1'></div>

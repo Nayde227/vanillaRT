@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 44px;
-  width: 100vw;
+  width: 1440px;
  }
  /*-----------nav-------------*/
 nav{
@@ -14,7 +14,7 @@ nav{
   align-items: center;
   background:rgba(255, 147, 244, 1);
   height: 70px;
-  width:100vw;
+  width:1440px;
   margin:0%;
 }
 .logo{
@@ -25,28 +25,31 @@ nav{
   display: flex;
   align-items: end;
   gap:20px;
+  margin-right: 20px;
 }
 a{
   color:white;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 17px;
+  
 }
-.navBar a:hover {
+.navBar a:active {
   text-decoration: underline;
   text-decoration-color: rgba(212, 255, 0, 1);
+  
 }
-.navBar a:active{
+.navBar a:hover{
   color: rgba(212, 255, 0, 1);
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<Banner>>>>>>>>>>>>>*/
 .banner {
   position: relative;
-  width: 101vw;
+  width: 1440px;
   height: 450px;
   overflow: hidden;
   background-image: url(./assets/banner.jpg);
-  background-size:100vw;
+  background-size:1440px;
   
 }
 
@@ -87,21 +90,23 @@ a{
 
 /*<<<<<<<<Boxes>>>>>>>>>>>>>*/
 .boxes{
-  /* position: absolute; */
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  margin-top: -120px;
+  margin-top: 150px;
   width: 100vw;
   gap: 100px;
   
 }
 .box1{
+  position:relative;
   width: 300px;
   height: 369px;
   border-radius: 30px;
-   box-shadow: 0 3px 1px 3px rgba(198, 195, 195, 0.5); 
+   box-shadow: 0 3px 1px 3px rgba(198, 195, 195, 0.5);
+   
 }
 .cohete{
   margin-left:95px;
@@ -114,8 +119,8 @@ color: rgba(255, 147, 244, 1);
 display:flex;
 justify-content: center;
 margin: 1px;
-
 }
+
 p{
   width: 200px;
   margin-left: 60px;
@@ -132,11 +137,12 @@ p{
   margin-left: -70px;
 }
 .c2{
-  position:relative;
-  width:180px ;
-  height: 360px;
+  position:absolute;
+  width:245px ;
+  height: 490px;
   background-color: rgba(255, 147, 244, 1) ;
-  border-radius:  225px 0 0 225px ;
+  border-radius:  245px 0 0 245px;
   margin-top:-160px; 
   margin-left: 1204px;
+  
 }
