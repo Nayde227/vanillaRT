@@ -1,10 +1,18 @@
 import { useState } from 'react';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav, Button, Alert } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import coheteImage from './assets/cohete.png';
 import './App.css';
 
+
+
 function App() {
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowAlert(true);
+    setTimeout(() => setShowAlert(false), 3000); 
+  };
   return (
     <>
       <header className="header bg-light text-center py-2">Texto de header top</header>
@@ -14,7 +22,7 @@ function App() {
         <Navbar.Toggle className="navbar-toggler" aria-controls="navbarNav" />
         <Navbar.Collapse id="navbarNav">
           <Nav className="navbar-nav ms-auto">
-            <Nav.Link className="nav-item">
+            <Nav.Link  className="nav-item">
               <a className="nav-link" href="#">Inicio</a>
             </Nav.Link>
             <Nav.Link className="nav-item">
@@ -33,7 +41,7 @@ function App() {
         <div className="banner-content">
           <h3>TEXTO PREVIO AL TÍTULO</h3>
           <h1>Título banner principal</h1>
-          <button className='enviar'>Enviar</button>
+          <Button className='enviar ' onClick={handleButtonClick}>Enviar</Button>
         </div>
         
       </section>
@@ -64,6 +72,11 @@ function App() {
         </div>
       </section>
       <div className='c1'></div>
+      {showAlert && (
+        <Alert variant="success" className="position-fixed top-50 start-50 translate-middle-x m-3" onClose={() => setShowAlert(false)} dismissible>
+          Formulario enviado
+        </Alert>
+      )}
     </>
   );
 }
