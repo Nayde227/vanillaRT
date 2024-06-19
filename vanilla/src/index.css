@@ -2,11 +2,15 @@
     font-family: 'Open Sans', 'sans-serif';
   }
   
-  body {
+  html,body{
     margin: 0;
-    max-width: 1440px;
-    max-height: 1222px;
+    overflow-x: hidden;
   }
+  
+  body {
+    max-width: 100%;
+    max-height: 1222px;
+    }
   
 h1 {
     font-size: 5rem;

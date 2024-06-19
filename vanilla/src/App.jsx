@@ -27,13 +27,16 @@ function App() {
         <Navbar.Collapse id="navbarNav">
           <Nav className="navbar-nav ms-auto">
             <Nav.Link className="nav-item">
-              <a className="nav-link" href="#">Inicio</a>
+            <a className="nav-link" href="#">Inicio</a>
+            <span className='line'></span>
             </Nav.Link>
             <Nav.Link className="nav-item">
               <a className="nav-link" href="#">Sección 2</a>
+            <span className='line'></span>
             </Nav.Link>
             <Nav.Link className="nav-item">
               <a className="nav-link" href="#">Sección 3</a>
+            <span className='line'></span>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -50,23 +53,23 @@ function App() {
         
       </section>
       <div className='c2'></div>
-      <section className='boxes container '>
-        <div className='row justify-content-center align-items-center'>
-          <div className='col-12 col-md-4 mb-4 d-flex justify-content-center'>
+      <section className='boxes container no-border-box justify-content-center'>
+        <div className='row justify-content-center align-items-center '>
+          <div className='col-12 col-md-3 mb-4 mx-5 d-flex justify-content-center '>
             <div className='box1 p-3 text-center'>
               <img className='cohete ' src={coheteImage} alt="Cohete" />
               <h2 className='Item'>Item 1</h2>
               <p>Aún nuestro sitio está en construcción (somos muy perfeccionistas jeje). Mientras puedes navegar en nuestro sitio antiguo.</p>
             </div>
           </div>
-          <div className='col-12 col-md-4 mb-4 d-flex justify-content-center'>
+          <div className='col-12 col-md-3 mb-4 mx-4 d-flex justify-content-center '>
             <div className='box1 p-3 text-center'>
               <img className='cohete img-fluid' src={coheteImage} alt="Cohete" />
               <h2 className='Item'>Item 2</h2>
               <p>Aún nuestro sitio está en construcción (somos muy perfeccionistas jeje). Mientras puedes navegar en nuestro sitio antiguo.</p>
             </div>
           </div>
-          <div className='col-12 col-md-4 mb-4 d-flex justify-content-center'>
+          <div className='col-12 col-md-3 mb-4 mx-5 d-flex justify-content-center '>
             <div className='box1 p-3 text-center'>
               <img className='cohete img-fluid' src={coheteImage} alt="Cohete" />
               <h2 className='Item'>Item 3</h2>
