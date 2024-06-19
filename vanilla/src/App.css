@@ -1,12 +1,3 @@
-:root {
-  font-family: 'Open Sans', 'sans-serif';
-}
-
-body {
-  margin: 0;
-  max-width: 1440px;
-  max-height: 1222px;
-}
 
 header {
   display: flex;
@@ -29,8 +20,9 @@ nav {
 }
 
 .logo {
-  color: white;
-  margin-left: 30px;
+  height: 30px;
+  width: 120px;
+  margin-left: -10px;
 }
 
 .navBar {
@@ -44,23 +36,28 @@ nav {
 .navbar-collapse {
   z-index: 3;
   background-color: rgba(255, 147, 244, 1); 
-  margin-top: 20px;
+  margin-top: 18px;
+  width: 100%;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: white;
-  text-decoration: none; /* No subrayado por defecto */
+.nav-link {
+  margin-left: 20px;
+  font-size: large;
 }
+ 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
-      display: flex !important;
+      display: flex ;
       flex-basis: auto;
       align-items: center;
       margin-top: auto;
+      color:white;
+      
+      
   }
-  .navbar-expand-lg .navbar-collapse:hover{
-    color: rgba(212, 255, 0, 1);
   
+  .boxes{
+    margin-left: 50px;
   }
 }
 
@@ -71,9 +68,9 @@ nav {
 }
 
 /* Estilo para el active */
-.navbar-dark .navbar-nav .nav-link.active {
+.navbar-dark .navbar-nav .nav-link:active {
   text-decoration: underline;
-  text-decoration-color: rgba(212, 255, 0, 1);
+  
 }
 
 
@@ -86,6 +83,7 @@ nav {
   background-image: url('./assets/banner.jpg');
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 
 .overlay {
@@ -105,7 +103,7 @@ nav {
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
-  z-index: 2; /* Asegura que el contenido esté encima de la superposición */
+  
 }
 
 .enviar {
@@ -127,87 +125,84 @@ nav {
 
 /*<<<<<<<<Boxes>>>>>>>>>>>>>*/
 .boxes {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:center;
   align-content: center;
   width: 100%; /* Ajustado para responsividad */
-  gap: 100px;
+ margin-top: 70px;
+ z-index: 3;
 }
+
 
 .box1 {
   position: relative;
   width: 100%; /* Ajustado para responsividad */
-  max-width: 300px;
+  width: 300px;
   height: 369px;
+  background-color: white;
   border-radius: 30px;
   box-shadow: 0 3px 1px 3px rgba(198, 195, 195, 0.5);
-  margin-top: 80px;
+  margin:30px;
 }
 
 .cohete {
-  display: block;
-  margin: 0 auto;
+  margin-top: 30px;
   width: 100px;
   height: 100px;
+  
 }
 
 .Item {
   color: rgba(255, 147, 244, 1);
   display: flex;
   justify-content: center;
-  margin: 1px;
+  
 }
 
 p {
-  text-align: center;
   font-size: 16px;
+  width: 180px;
+  margin-top: 10px;
+  margin-left: 40px;
   margin-bottom: 10px;
 }
 
 .c1 {
+  
+  margin-top: 41%;
+  margin-left: -70px;
   width: 152px;
   height: 73px;
   background-color: rgba(255, 147, 244, 1);
   border-radius: 100px 100px 0 0;
-  margin-top: 80px;
-  margin-left: -70px;
 }
 
 .c2 {
   position: absolute;
-  top:50%;
-  bottom: 0; /* Coloca .c2 en la parte inferior */
-  left: 70%;
+  top:56%;
+  bottom: 0; 
+  left: 75%;
   width: 240px;
-  height: 490px; /* Ajusta la altura para formar un semicírculo */
+  height: 480px; 
   background-color: rgba(255, 147, 244, 1);
-  border-radius:  245px 0 0 245px ; /* Forma un semicírculo en la esquina inferior izquierda */
-  z-index: 1;
-  transform: translate(50%, -50%); /* Centra el semicírculo respecto al borde izquierdo */
+  border-radius:  270px 0 0 270px ; 
+  z-index: 2;
+  transform: translate(50%, -50%); 
 }
 @media (max-width: 800px) {
   .c2 {
-    left: 88%; /* Ajusta la posición en dispositivos móviles */
-    transform: translate(-80%, -50%); /* Centra completamente en dispositivos móviles */
+    left:120%;
+    transform: translate(-10%, -30%);
+    z-index: 2;
   }
-}
+  .c1{
+    margin-top: 350%;
+  }
+  .logo{
+    margin-left: 20px;
+  }
 
-h1 {
-  font-size: 80px;
-  color: white;
-  margin: 10px;
-  line-height: 1;
-}
-
-h2 {
-  font-size: 50px;
-  font-weight: bold;
-}
-
-h3 {
-  margin: 0;
-  color: white;
-  font-weight: lighter;
+  
 }
