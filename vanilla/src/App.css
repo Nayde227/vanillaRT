@@ -235,3 +235,13 @@ nav {
 }
 
 }
+@media (min-width:1435px){
+  .c2{
+    left:85%;
+  }
+  .boxes{
+    margin-left:20%;
+    display: flex;
+    justify-content: center;
+  }
+}

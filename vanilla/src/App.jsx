@@ -80,7 +80,7 @@ function App() {
       </section>
       <div className='c1'></div>
       {showAlert && (
-        <Alert variant="success" className="position-fixed top-50 start-50 translate-middle-x m-3" onClose={() => setShowAlert(false)} dismissible>
+        <Alert variant="success" className="position-fixed z-3 top-50 start-50 translate-middle-x m-3" onClose={() => setShowAlert(false)} dismissible>
           Formulario enviado
         </Alert>
       )}
